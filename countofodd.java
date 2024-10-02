@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class sumofeven
+class countofodd
 {
 	public static void main(String[] args)
 	{
@@ -7,14 +7,14 @@ class sumofeven
 		System.out.print("Enter the N value =  ");
 		int n=scn.nextInt();
 		System.out.println("-------------------");
-		int sum=0;
+		int count=0;
 		for(int i=1;i<=n;i++)
 		{
-			if(i%2==0)
+			if(i%2!=0)
 			{
-				sum=sum+i;
+				count++;
 			}
 		}
-		System.out.println(sum);
+		System.out.println(count);
 	}
 }
